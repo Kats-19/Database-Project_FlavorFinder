@@ -71,7 +71,7 @@ CREATE TABLE recipe_steps (
   FOREIGN KEY (recipe_id) REFERENCES recipes(recipe_id) ON DELETE CASCADE
 );
 
--- RELATIONSHIP: recipe_ingredients
+-- RELATIONSHIP: recipe_ingredients (M:N)
 CREATE TABLE recipe_ingredients (
   recipe_id INT UNSIGNED NOT NULL,
   ingredient_id INT UNSIGNED NOT NULL,
