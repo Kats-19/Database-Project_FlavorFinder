@@ -1,0 +1,81 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FAF3E0;
+  color: #FBA904;
+}
+
+header {
+  background-color: #FBA904;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 100px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #B1FF2B
+}
+
+main {
+  flex: 1;
+  text-align: center;
+  padding: 3rem;
+}
+
+button {
+  background-color: #FBA904;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0 5px 5px 0; /* rounded right corners only */
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6B8E23;
+}
+
+footer {
+  background-color: #FBA904;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+input[type="text"] {
+  width: 60%;         /* makes it wider */
+  max-width: 500px;   /* limits how big it gets */
+  padding: 0.8rem 1rem;    /* adds space inside the box */
+  font-size: 1rem;    /* makes the text inside bigger */
+  border: 2px solid #ccc; 
+  border-radius: 5px 0 0 5px; /* gives smooth corners */
+  outline: none;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
