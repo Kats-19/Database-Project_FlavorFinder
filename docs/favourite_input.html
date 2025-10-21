@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Favourite</title>
+</head>
+<body>
+  <h1>Add Favourite</h1>
+  <form action="favourite_feedback.php" method="post">
+    <label>User:</label>
+    <select name="userID" required>
+      <?php
+      include 'connect.php';
+      $users = $conn->query("SELECT userID, name FROM User");
+      while ($row = $users->fetch_assoc()) {
+        echo "<option value='{$row['userID']}'>{$row['name']}</option>";
+      }
+      ?>
+    </select><br><br>
+
+    <label>Recipe:</label>
+    <select name="recipeID" required>
+      <?php
+      $recipes = $conn->query("SELECT recipeID, title FROM Recipe");
+      while ($row = $recipes->fetch_assoc()) {
+        echo "<option value='{$row['recipeID']}'>{$row['title']}</option>";
+      }
+      ?>
+    </select><br><br>
+
+    <input type="submit" value="Add Favourite">
+  </form>
+  <a href="maintenance.html">Back to Maintenance Page</a>
+</body>
+</html>
