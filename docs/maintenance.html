@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+  header("Location: login.html");
+  exit;
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head><title>Maintenance</title></head>
@@ -8,6 +16,7 @@
     <li><a href="recipe_input.html">Add Recipe</a></li>
     <li><a href="ingredient_input.html">Add Ingredient</a></li>
     <li><a href="favourite_input.html">Add Favourite</a></li>
+    <li><a href="logout.php">Logout</a></li>
   </ul>
   <h2>Search</h2>
   <ul>
