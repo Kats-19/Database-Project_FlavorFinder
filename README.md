@@ -1,8 +1,8 @@
-🍽️ #FlavorFinder — Web Project
+🍽️ ## **FlavorFinder — Web Project**
 FlavorFinder is a recipe search platform where users can search for recipes based on ingredients, difficulty, cuisine, and other filters.
 This project was developed across Assignments 1–10 for the Databases and Web Services course.
 
-🚀 3Project Overview
+🚀 ## **Project Overview**
 FlavorFinder is a PHP + MySQL web application that allows users to:
 Search recipes by ingredient
 View recipe details
@@ -12,7 +12,7 @@ Support maintenance mode
 Implement logging and monitoring
 Deploy with XAMPP on localhost
 
-📂 #Project Structure
+📂 ## **Project Structure**
 public_html/
 │── index.html
 │── ingredient_search.html
@@ -33,7 +33,7 @@ public_html/
 │    ├── access.log
 │    ├── error.log
 
-🛠️ #Technologies Used
+🛠️ ## **Technologies Used**
 Technology	Purpose
 PHP	Backend logic
 MySQL	Database for users, recipes, ingredients
@@ -42,7 +42,7 @@ HTML/CSS	Frontend structure & styling
 Python	Log parsing for Assignment 8
 GitHub Pages	Public showcase (static part only)
 
-🗃️ Database Schema
+🗃️ ## **Database Schema**
 Tables
 User
 Recipe
@@ -56,7 +56,7 @@ User (userID PK) ——< Favourite >—— Recipe (title PK)
 User —< Provide >— Ingredient
 Recipe —< Contains >— Ingredient
 
-🔍 #Core Search Functionality
+🔍 ## **Core Search Functionality**
 Ingredient Search (ingredient_search.php)
 
 Users enter an ingredient → backend searches all recipes containing it:
@@ -66,7 +66,7 @@ FROM Recipe r
 JOIN Contains c ON r.title = c.recipeTitle
 WHERE c.ingredientName LIKE '%input%';
 
-📑 #Assignment Summaries
+📑 ## **Assignment Summaries**
 Assignment 1–3: Database creation + queries
 Created schema
 Inserted sample data
@@ -114,7 +114,7 @@ Apache + MySQL MUST be running locally.
 GitHub Pages only hosts static files.
 
 
-▶️ # How to Run the Project Locally
+▶️ ## **How to Run the Project Locally**
 
 Install XAMPP
 Start Apache and MySQL
@@ -125,7 +125,7 @@ C:\xampp\htdocs\flavorfinder
 Visit:
 http://localhost/flavorfinder/index.html
 
-🧪 #Testing Checklist
+🧪 ## **Testing Checklist**
 Feature	Status
 Ingredient search	✅
 Recipe detail page	✅
@@ -135,11 +135,11 @@ Query results	✅
 Logs collected	✅
 Python parsing	✅
 
-👥 #Team
+👥 ## **Team**
 Keni Sackey
 Fatima Zafar
 
-📌 #Final Notes
+📌 ## **Final Notes**
 PHP does not work on GitHub Pages → this is expected.
 Everything dynamic must run with XAMPP.
 Your TA will be able to test your full search functionality.
